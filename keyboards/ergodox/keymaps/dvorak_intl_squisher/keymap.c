@@ -21,9 +21,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   |Grv/L1| LAlt | LGui | Left | Right|                                       |  Up  | Down |   [  |   ]  | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
- *                                        | App  | L1   |       | L2   |PrntScr |
+ *                                        | C    | L1   |       | L2   |PrntScr |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | Home |       | PgUp |        |      |
+ *                                 |      |      | Home |       | App  |        |      |
  *                                 | Space| LShft|------|       |------| RShft  |Enter |
  *                                 |      |      | End  |       | AltGr|        |      |
  *                                 `--------------------'       `----------------------'
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_BSPC,        KC_A,           KC_O,    KC_E,   KC_U,   KC_I,
         KC_TAB,         CTL_T(KC_SCLN), KC_Q,    KC_J,   KC_K,   KC_X,   KC_INS,
         LT(SYMB,KC_GRV),KC_LALT,        KC_LGUI, KC_LEFT,KC_RGHT,
-                                              CTL_T(KC_APP),  TG(1),
+                                               KC_C,  TG(1),
                                                               KC_HOME,
                                                KC_SPC,KC_LSFT,KC_END,
         // right hand
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_PGDN,     KC_B,   KC_M,   KC_W,   KC_V,   CTL_T(KC_Z),      KC_RCTL,
                                   KC_UP,  KC_DOWN,KC_LBRC,KC_RBRC,          KC_FN1,
              TG(2),        KC_PSCREEN,
-             KC_PGUP,
+             KC_APP,
              KC_RALT,KC_RSFT, KC_ENT
     ), 
 /* Keymap 1: Symbol & Media Layer
